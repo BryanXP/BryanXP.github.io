@@ -10,6 +10,7 @@ table {
   color: #fff;
   margin: 0 auto;
   box-shadow: 1px 3px 9px 6px #000000c2;
+  text-align: center;
 }
 caption {
   color: #000;
@@ -18,6 +19,10 @@ caption {
 
 th {
   padding: 0 50px;
+}
+
+thead tr th {
+  padding: 0;
 }
 
 /* Enlève le PADDING de la première case tu tableau*/
@@ -33,46 +38,8 @@ thead th:nth-child(1n + 2) {
   background: #80808031;
 }
 
-/* Change le coin en haut à DROITE de la dernière case*/
-thead tr th:nth-child(4n) {
-  border-top-right-radius: 15px;
-}
-
-/* change le coin en bas à DROITE de la dernièrer case */
- tr:nth-child(4) td:nth-child(4n) {
-  border-bottom-right-radius: 15px;
-}
-
- tr:nth-child(4) th:nth-child(1) {
-  border-bottom-left-radius: 15px;
-}
-
-td input{
-  display: block;
- width: 35px;
- height: 35px;
- margin: 0 auto;
- border-radius: 1500px;
- border: 1px solid #80808059;
- background: transparent;
- padding: 0;
- color: #ffffff;
- text-align: center;
-}
-
-td input:focus {
-  border: transparent;
-  background: #80808031;
-  outline: none;
-}
-
-
-#add-player {
-  text-align: center;
-  border: 1px solid;
-  border-top-left-radius:15px ;
-  padding: 21px 0;
-  outline: none;
+tfoot tr {
+  background: #80808059;
 }
 
 /* Change la couleur de font des lignes par paire */
@@ -84,6 +51,60 @@ tbody tr:nth-child(2n + 1) {
 tr:nth-child(2n){
   background: #80808031;
 }
+/* Change le coin en haut à DROITE de la dernière case*/
+thead tr th:nth-child(4n) {
+  border-top-right-radius: 15px;
+}
+
+/* change le coin en bas à DROITE de la dernièrer case */
+tfoot tr td:nth-child(4) {
+  border-bottom-right-radius: 15px;
+}
+/* change le coin en bas à GAUCHE de la dernièrer case */
+ tfoot tr td:nth-child(1) {
+  border-bottom-left-radius: 15px;
+}
+
+
+#player {
+  text-align: center;
+  border: 1px solid transparent;
+  padding: 25px 0;
+  outline: none;
+  background: transparent;
+  color: #fff;
+  letter-spacing: 10px;
+  font-weight: 900;
+}
+
+td input{
+  display: block;
+  width: 35px;
+  height: 35px;
+  margin: 0 auto;
+  border-radius: 1500px;
+  border: 1px solid #80808059;
+  background: transparent;
+  padding: 0;
+  color: #ffffff;
+  text-align: center;
+}
+
+td input:focus {
+  border: transparent;
+  background: #80808031;
+  outline: none;
+}
+
+
+#add-player {
+  text-align: center;
+  border: 1px solid transparent;
+  border-top-left-radius:15px ;
+  padding: 28px 0;
+  outline: none;
+}
+
 
 .container-add-player {
   margin: 0 auto;
