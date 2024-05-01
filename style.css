@@ -1,0 +1,98 @@
+.skyjo-container h2 {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+table {
+  border: 1px solid black;
+  border-radius: 15px ;
+  background: #000;
+  color: #fff;
+  margin: 0 auto;
+  position: relative;
+  box-shadow: 1px 3px 9px 6px #000000c2;
+}
+caption {
+  color: #000;
+  text-transform: uppercase;
+}
+
+th {
+  padding: 0 50px;
+}
+
+/* Enlève le PADDING de la première case tu tableau*/
+thead tr th:first-child{
+  padding: 0;
+}
+td {
+  padding: 15px;
+}
+
+/* Change  l'arrière font de la première ligne du tableau en commencent pas la 2eme colonne*/
+thead th:nth-child(1n + 2) {
+  background: #80808031;
+}
+
+/* Change le coin en haut à DROITE de la dernière case*/
+thead tr th:nth-child(4n) {
+  border-top-right-radius: 15px;
+}
+
+/* change le coin en bas à DROITE de la dernièrer case */
+ tr:nth-child(4) td:nth-child(4n) {
+  border-bottom-right-radius: 15px;
+}
+
+ tr:nth-child(4) th:nth-child(1) {
+  border-bottom-left-radius: 15px;
+}
+
+td input{
+  display: block;
+ width: 35px;
+ height: 35px;
+ margin: 0 auto;
+ border-radius: 1500px;
+ border: 1px solid #80808059;
+ background: transparent;
+ padding: 0;
+ color: #ffffff;
+ text-align: center;
+}
+
+td input:focus {
+  border: transparent;
+  background: #80808031;
+  outline: none;
+}
+
+
+#add-player {
+  text-align: center;
+  border: 1px solid;
+  border-top-left-radius:15px ;
+  padding: 21px 0;
+  outline: none;
+}
+
+/* Change la couleur de font des lignes par paire */
+tbody tr:nth-child(2n + 1) {
+  background: #80808059;
+}
+
+/* Change la couleur de font des lignes par impaire */
+tr:nth-child(2n){
+  background: #80808031;
+}
+
+.container-add-player {
+  margin: 0 auto;
+  width: 1900px;
+}
+
+#add-round {
+  display: block;  
+  margin: 0 auto;
+  transform:translateY(2px) translateX(-226px);
+}
