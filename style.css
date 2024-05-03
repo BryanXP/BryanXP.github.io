@@ -49,7 +49,7 @@ tbody tr:nth-child(2n + 1) {
 
 /* Change la couleur de font des lignes par impaire */
 tr:nth-child(2n){
-  background: #80808031;
+  background: red;
 }
 /* Change le coin en haut à DROITE de la dernière case*/
 thead tr th:nth-child(4n) {
@@ -114,5 +114,5 @@ td input:focus {
 #add-round {
   display: block;  
   margin: 0 auto;
-  */transform:translateY(2px) translateX(-226px);*\
+  /*transform:translateY(2px) translateX(-226px);*\
 }
