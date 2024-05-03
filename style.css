@@ -114,5 +114,5 @@ td input:focus {
 #add-round {
   display: block;  
   margin: 0 auto;
-  transform:translateY(2px) translateX(-226px);
+  */transform:translateY(2px) translateX(-226px);*\
 }
